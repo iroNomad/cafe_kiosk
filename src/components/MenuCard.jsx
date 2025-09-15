@@ -1,10 +1,26 @@
 export default function MenuCard({item}) {
-
     const handleDivClick = () => {
         const orderList = document.getElementById("orderList");
-        const listItem = document.createElement("li");
-        listItem.textContent = `${item.title} - ${item.price}`;
-        listItem.classList.add("border", "border-amber-900", "py-2", "text-xl", "px-4");
+        const listItem = document.createElement("tr");
+
+        // Create and append the first cell
+        const itemCell = document.createElement("td");
+        itemCell.appendChild(document.createTextNode(item.title));
+        itemCell.classList.add("border", "border-amber-900", "px-4", "py-2");
+        listItem.appendChild(itemCell);
+
+        // Create and append the second cell
+        const qtyCell = document.createElement("td");
+        qtyCell.appendChild(document.createTextNode("0"));
+        qtyCell.classList.add("border", "border-amber-900", "px-4", "py-2");
+        listItem.appendChild(qtyCell);
+
+        // Create and append the third cell
+        const priceCell = document.createElement("td");
+        priceCell.appendChild(document.createTextNode(item.price));
+        priceCell.classList.add("border", "border-amber-900", "px-4", "py-2");
+        listItem.appendChild(priceCell);
+
         orderList.appendChild(listItem);
     };
 
