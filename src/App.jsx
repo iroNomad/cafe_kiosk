@@ -1,6 +1,5 @@
 import './index.css'
 import MenuCard from "./components/MenuCard.jsx";
-import logo from "./assets/java_logo.png"
 import {Header} from "./components/Header.jsx";
 import {Footer} from "./components/Footer.jsx";
 
