@@ -18,7 +18,7 @@ export default function OrderWindow({ isOpen, onClose}) {
                     onClick={onClose}
                     className="text-xl bg-amber-900 text-white py-2 px-10 mt-6"
                 >
-                    Cancel
+                    Go back
                 </button>
             </div>
         </div>
