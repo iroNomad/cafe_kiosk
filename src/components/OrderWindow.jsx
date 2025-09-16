@@ -7,7 +7,7 @@ export default function OrderWindow({ isOpen, onClose}) {
                 <div className="flex gap-10 p-4">
                     <div className="bg-white border-2 w-60">
                         <h3 className="text-3xl mt-2">Dine-in</h3>
-                        <img src="../assets/dine-in.png" alt="Dine-in" className="p-8"/>
+                        <img src="src/assets/dine-in.png" alt="Dine-in" className="p-8"/>
                     </div>
                     <div className="bg-white border-2 w-60">
                         <h3 className="text-3xl mt-2">Takeout</h3>
